@@ -392,6 +392,7 @@ class ContactsAdapter(
                     }
                 }
             }
+            itemContactImage.beVisibleIf(activity.config.showContactThumbnails)
 
             if (enableDrag && textToHighlight.isEmpty()) {
                 dragHandleIcon.apply {
